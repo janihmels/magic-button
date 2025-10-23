@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Article Extractor",
+    "version": "1.0.0",
+    "description": "Extract the main article text and send it to an external API.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "contextMenus"
+    ],
+    "host_permissions": [
+      "<all_urls>",
+      "https://berrynoweb.lingoberry.co/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Article Extractor",
+      "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["vendor/readability.js", "contentScript.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }

@@ -1,0 +1,68 @@
+# Node / package manager artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Build outputs
+dist/
+build/
+out/
+bundle/
+*.zip
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment / secrets
+.env
+.env.local
+.env.*
+*.env
+*.pem
+*.key
+
+# Test coverage / reports
+coverage/
+.nyc_output/
+reports/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# Manifest backups or cache
+manifest.json.bak
+manifest.*.bak
+manifest-cache.json
+
+# Chrome-specific generated files
+# (like when testing locally)
+chrome-profile/
+chrome-extension-debug/
+local_storage.json
+IndexedDB/
+service-worker.js.map
+background.js.map
+content.js.map
+
+# Other packaging artifacts
+*.crx
+*.pem

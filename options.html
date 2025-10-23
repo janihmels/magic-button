@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 640px; margin: 24px auto; padding: 0 12px; }
+      label { display:block; margin: 12px 0 6px; font-weight:600; }
+      input[type="text"], input[type="password"] { width:100%; padding:8px; }
+      button { margin-top: 12px; padding: 8px 10px; }
+      .muted { color:#666; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h2>Article Extractor – Settings</h2>
+    <label>API URL</label>
+    <input id="apiUrl" type="text" placeholder="https://api.example.com/ingest" />
+
+    <label>API Key (optional)</label>
+    <input id="apiKey" type="password" placeholder="sk-…" />
+
+    <button id="save">Save</button>
+    <div id="status" class="muted"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
